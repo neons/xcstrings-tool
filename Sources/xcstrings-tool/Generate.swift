@@ -62,7 +62,7 @@ struct Generate: ParsableCommand {
     }
 
     var tableName: String {
-        input.lastPathComponent.replacingOccurrences(of: ".\(input.pathExtension)", with: "")
+        input.lastPathComponent.replacingOccurrences(of: ".\(input.pathExtension)", with: "Loc")
     }
 
     var resolvedAccessLevel: StringGenerator.AccessLevel {
